@@ -74,20 +74,13 @@ WSGI_APPLICATION = 'pose_check.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'djongo',
-#         'NAME': 'kdg-test',
-#         'CLIENT' : {
-#             'HOST' : 'mongodb+srv://kihoon:asdf1234@advices.7o07p.mongodb.net/myFirstDatabase?retryWrites=true&w=majority'
-#         }
-#     }
-# }
-
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'djongo',
+        'NAME': 'kdg-test',
+        'CLIENT' : {
+            'HOST' : 'mongodb+srv://kihoon:asdf1234@advices.7o07p.mongodb.net/myFirstDatabase?retryWrites=true&w=majority'
+        }
     }
 }
 
