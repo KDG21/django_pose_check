@@ -21,7 +21,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '@f+g%=dte-&uximm%!um_xk)+f@84#f1cpavh_$%b^=pex(%5p'
+SECRET_KEY = SECRET_KEY
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -79,7 +79,7 @@ DATABASES = {
         'ENGINE': 'djongo',
         'NAME': 'kdg-test',
         'CLIENT' : {
-            'HOST' : 'mongodb+srv://kihoon:asdf1234@advices.7o07p.mongodb.net/myFirstDatabase?retryWrites=true&w=majority'
+            'HOST' : HOST_KEY
         }
     }
 }
